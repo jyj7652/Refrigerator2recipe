@@ -1,2 +1,38 @@
-# Refrigerator2recipe
-`OpenCV`와 `YOLO` (You Only Look Once)를 사용하여 냉장고 내부의 식재료를 비디오 피드에서 감지하고 인식합니다.
+# Refrigerator Contents 2 Recipe
+
+![Refrigerator Contents](https://github.com/hje1072/Tetris/assets/70854950/e7de13e9-99b2-43a9-a259-ff0fa3a79d58)
+
+## 프로젝트 소개
+- Refrigerator Contents 2 Recipe 프로젝트는 `OpenCV`와 `YOLO` (You Only Look Once)를 사용하여 냉장고 내부의 식재료를 비디오 피드에서 감지하고 인식합니다.
+- 사용자가 식재료를 클릭하면 해당 식재료를 포함한 레시피를 검색하여 웹 브라우저를 통해 보여줍니다.
+
+## 주요 기능
+
+- YOLOv3를 사용하여 냉장고 내부의 식재료를 감지합니다.
+- 감지된 식재료를 경계 상자와 레이블로 표시합니다.
+- 사용자가 감지된 식재료를 클릭하면 온라인에서 해당 식재료를 포함한 레시피를 검색합니다.
+- 비디오 창의 크기를 재생 중에 자유롭게 조정할 수 있습니다.
+
+## 필요 조건
+
+- Python 3.x
+- OpenCV
+- NumPy
+- 사전 학습된 YOLOv3 가중치 파일 및 구성 파일
+- 객체 레이블용 COCO 이름 파일
+- 웹 브라우저
+
+## 사용 방법
+
+1. `refrigerator.mp4`와 같은 냉장고 내부의 비디오 파일을 준비합니다.
+2. 프로그램을 시작하고 객체가 인식된 사각형이 보이면 레시피를 보고싶은 식재료를 클릭합니다.
+3. 웹 브라우저가 열리면 원하는 레시피를 사용합니다.
+
+## 실제 예시
+
+- 프로그램을 실행하면 객체가 인식된 영상이 나옵니다.
+- 객체를 클릭하면 해당 식재료의 레시피를 검색할 수 있습니다.
+
+| 실행 영상 |
+|----------|
+![recipe변환](https://github.com/hje1072/Tetris/assets/70854950/61a4820a-dfe1-461c-8bbe-1084bf018817)
